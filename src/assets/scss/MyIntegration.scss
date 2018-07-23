@@ -1,0 +1,21 @@
+@import "./Base.scss";
+.order-panel {
+  font-size: 12px;
+  margin: 0 30px;
+  .integration {
+    color: red;
+    font-size: 16px;
+  }
+  .line {
+    display: inline-block;
+    height: 3px;
+    border-bottom: 2px solid #e0e0e0;
+    width: 100%;
+  }
+  dl {
+    dd.rules {
+      line-height: 30px;
+      margin-left: 0;
+    }
+  }
+}

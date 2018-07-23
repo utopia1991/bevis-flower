@@ -1,0 +1,125 @@
+@mixin icon {
+	display: inline-block;
+	background-image: url('./assets/images/common.png');
+	background-repeat: no-repeat;
+	width: 24px;
+    height: 24px;
+}
+
+@mixin server-icon {
+	display: inline-block;
+	background-image: url('./assets/images/server.png');
+	background-repeat: no-repeat;
+	width: 60px;
+    height: 60px;
+}
+
+.ico-cart-white {
+	@include icon;
+    background-position: -306px -281px;
+}
+
+.ico-heart {
+	@include icon;
+	background-position: -286px -318px;
+}
+
+.ico-wxrwm {
+	@include icon;
+    background-position: -285px -343px;
+}
+
+.ico-server-go1 {
+	@include server-icon;
+	background-position: 0 0;
+}
+
+.ico-server-go2 {
+	@include server-icon;
+	background-position: -60px 0;
+}
+
+.ico-server-go3 {
+	@include server-icon;
+	background-position: -120px 0;
+}
+
+.ico-server-go4 {
+	@include server-icon;
+	background-position: -180px 0;
+}
+
+.ico-server-go5 {
+	@include server-icon;
+	background-position: -240px 0;
+}
+
+.ico-server-go6 {
+	@include server-icon;
+	background-position: -300px 0;
+}
+
+.ico-member {
+	@include icon;
+	background-position: -293px -236px;
+}
+
+.ico-accout {
+	@include icon;
+	background-position: -362px -168px;
+}
+
+.ico-order {
+	@include icon;
+	background-position: -362px -202px;
+}
+
+.ico-jifeng {
+	@include icon;
+	background-position: -293px -202px;
+}
+
+.ico-pay {
+	@include icon;
+	background-position: -239px -230px;
+}
+
+.ico-serve {
+	@include icon;
+	background-position: 1px -281px;
+}
+
+.ico-pthy {
+	@include icon;
+	width: 22px;
+    height: 20px;
+    background-position: -391px -261px;
+}
+
+.ico-m-pay {
+	@include icon;
+	width: 32px;
+    height: 32px;
+    background-position: -377px -87px;
+}
+
+.ico-m-receive {
+	@include icon;
+	width: 32px;
+    height: 32px;
+    background-position: -336px -87px;
+}
+
+.ico-m-comment {
+	@include icon;
+	width: 32px;
+    height: 32px;
+    background-position: -293px -87px;
+}
+
+.ico-member-rank {
+	@include icon;
+	width: 16px;
+    height: 16px;
+	background-position: -130px -318px;
+}

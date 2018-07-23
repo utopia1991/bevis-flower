@@ -1,0 +1,117 @@
+@import "./Base.scss";
+.box-border {
+  border: 1px solid #d9d9d9;
+}
+.member {
+  margin-bottom: 20px;
+  .member-l {
+    padding-top: 20px;
+    border: 1px solid #d9d9d9;
+    .hd {
+      font-weight: bold;
+      line-height: 40px;
+      position: relative;
+      height: 40px;
+      padding: 0 0 0 50px;
+      color: #585858;
+      background-color: #ffeaeb;
+      b {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        display: block;
+        width: 51px;
+        height: 50px;
+        background-image: url("../assets/images/help_title.png");
+      }
+    }
+    .bd {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      > li {
+        font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1",
+          sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        padding: 6px 0 12px 24px;
+        color: #585657;
+        border-top: 1px solid #d9d9d9;
+        i {
+          position: relative;
+          top: 3px;
+          margin-right: 4px;
+        }
+        > a {
+          color: #585657;
+          &:hover,
+          &:focus {
+            color: #ff6a00;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            font-weight: normal;
+            margin: 0;
+            padding: 0 0 0 -24px;
+            a {
+              font-size: 12px;
+              line-height: 24px;
+              display: block;
+              margin-left: 28px;
+              color: #7e7e80;
+              &:hover,
+              &:focus {
+                color: #ff6a00;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    .guidance-list {
+      margin: 0 30px 30px;
+      padding: 0;
+      list-style: none;
+      li {
+        margin-bottom: 1px;
+        a {
+          font-size: 12px;
+          line-height: 40px;
+          display: block;
+          padding-left: 30px;
+          color: #737373;
+          border: 1px solid #f5f5f5;
+          background-color: #f5f5f5;
+          b {
+            font-family: tahoma, arial, "Hiragino Sans GB",
+              "\5FAE\8F6F\96C5\9ED1", sans-serif;
+            display: inline-block;
+            width: 160px;
+          }
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: #737373;
+            border: 1px solid #dff49f;
+            background-color: #f1f9db;
+          }
+        }
+      }
+    }
+  }
+  .member-r {
+    min-height: 675px;
+    padding: 0;
+    .title {
+      margin-bottom: 20px;
+      padding: 8px 30px;
+      background-color: #eee;
+    }
+  }
+}
