@@ -1,5 +1,5 @@
 <style lang='scss' scope>
-@import '../assets/scss/MyMessage.scss';
+	@import '../assets/scss/MyMessage.scss';
 </style>
 
 <template>

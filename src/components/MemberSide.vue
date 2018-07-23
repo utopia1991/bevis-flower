@@ -1,7 +1,3 @@
-<style scoped lang="scss">
-  @import "../assets/scss/Member.scss";
-</style>
-
 <template>
   <div class="box-border member-l">
     <div class="hd"><b></b>会员中心</div>
@@ -29,7 +25,7 @@
         sideList: [{
           name: '会员首页',
           type: 'member',
-          url: '/',
+          url: '/member/myOrder',
           subList: []
         }, {
           name: '订单信息',
@@ -43,10 +39,10 @@
             url: '/member/myOrder'
           }, {
             name: '我的评价',
-            url: '/member/myOrder'
+            url: '/member/myComment'
           }, {
             name: '我的收藏',
-            url: '/member/myOrder'
+            url: '/member/myFavorite'
           }]
         }, {
           name: '积分管理',

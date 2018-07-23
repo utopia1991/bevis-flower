@@ -1,9 +1,9 @@
-<style scoped lang="scss">
+<style lang="scss">
   @import "../assets/scss/Member.scss";
 </style>
 
 <template>
-  <section class="container">
+  <section class="container" id="memberBox">
     <section class="breadcrumb">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>

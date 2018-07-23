@@ -104,15 +104,15 @@
       color: #999999;
       border: 1px solid #feb98a;
       background-color: #fbf0e8;
-      .ico {
-        margin-top: -4px;
-      }
     }
-    .btn {
-      line-height: 25px;
+    .change-phone {
+      display: inline-block;
+      background: #ff6a00;
+      line-height: 26px;
       height: 26px;
-      margin-top: -2px;
       padding: 0 15px;
+      color: #fff;
+      font-size: 13px;
     }
   }
 }
