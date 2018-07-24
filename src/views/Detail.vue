@@ -42,7 +42,7 @@
             </div>
             <div class="cascader">
               配 送至：
-              <v-distpicker></v-distpicker>
+              <v-distpicker :placeholders="placeholders" @selected="onSelected"></v-distpicker>
             </div>
             <hr>
             <div class="flower-sku-box">
@@ -243,6 +243,12 @@
   export default {
     data () {
       return {
+        placeholders: {
+          province: '请选择省份',
+          city: '请选择城市',
+          area: '请选择区县'
+        },
+        region: '',
         hasHeight: true,
         appShow: false,
         wxShow: false,
@@ -469,6 +475,9 @@
       },
       collapseArea (e) {
         this.hasHeight = !this.hasHeight
+      },
+      onSelected (e) {
+        this.region = e.province.value + e.city.value + e.area.value
       }
     }
   }

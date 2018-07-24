@@ -38,17 +38,17 @@
 						<el-form-item label='邮箱:'>
 							qq_2655947@u.hua.com
 						</el-form-item>
-						<el-form-item label='手机:' prop='phone'>
+						<el-form-item label='手机:'>
 							123****2321
 						</el-form-item>
 						<el-form-item label='或电话:' prop='tel'>
 							<el-input type='input' v-model='ruleForm.tel' style="width: 200px;"></el-input>
 						</el-form-item>
 						<el-form-item label='地址:'>
-              <v-distpicker style="margin-left: -14px;"></v-distpicker>
+              <v-distpicker v-model='ruleForm.region' :placeholders="placeholders" @selected="onSelected" style="margin-left: -14px;"></v-distpicker>
 						</el-form-item>
 						<el-form-item>
-							<el-input type='input' v-model='ruleForm.region' style="width: 200px;"></el-input>
+							<el-input type='input' v-model='ruleForm.address' style="width: 400px;"></el-input>
 						</el-form-item>
 						<el-form-item>
 							<el-button type='primary' @click="submitForm('ruleForm')">提交</el-button>
@@ -79,10 +79,16 @@
 export default {
   data () {
     return {
+      placeholders: {
+        province: '请选择省份',
+        city: '请选择城市',
+        area: '请选择区县'
+      },
       ruleForm: {
         name: '',
         sex: '0',
         region: '',
+        address: '',
         date: '',
         phone: ''
       },
@@ -100,12 +106,14 @@ export default {
     submitForm (formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
-          console.log('submit!')
+          console.log(this.ruleForm)
         } else {
           console.log('error submit!!')
-          return false
         }
       })
+    },
+    onSelected (e) {
+      this.ruleForm.region = e.province.value + e.city.value + e.area.value
     }
   }
 }

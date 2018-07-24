@@ -33,10 +33,7 @@
                     <el-input v-model='form.tel' auto-complete='off' style="width: 160px;"></el-input>
                 </el-form-item>
                 <el-form-item label='省 市 区:' :label-width='formLabelWidth'>
-                    <v-distpicker 
-                        :placeholders="placeholders"
-                        @selected="onSelected"
-                    ></v-distpicker>
+                    <v-distpicker :placeholders="placeholders" @selected="onSelected"></v-distpicker>
                     <div class="area-tip">注：如果你不确定区或县名称，请选择“其它”</div>
                 </el-form-item>
                 <el-form-item label='详细地址:' :label-width='formLabelWidth'>
