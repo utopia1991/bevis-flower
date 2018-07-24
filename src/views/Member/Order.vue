@@ -1,5 +1,5 @@
 <style lang="scss" scope>
-  @import "../assets/scss/MyOrder.scss";
+  @import "../../assets/scss/Order.scss";
 </style>
 
 <template>
@@ -9,7 +9,7 @@
       <div class="user">
         <div class="avatar">
           <span>
-              <img :src="avatar">
+            <img :src="avatar">
           </span>
         </div>
         <p>

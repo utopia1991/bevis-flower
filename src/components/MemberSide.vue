@@ -8,7 +8,7 @@
         </router-link>
         <ul>
           <li v-for="(sub, index) in i.subList" :key="index">
-            <router-link :to="sub.url">
+            <router-link :to="sub.url" :class="{ 'active': sub.url === urlPath }">
               {{sub.name}}
             </router-link>
           </li>
@@ -22,61 +22,62 @@
   export default {
     data () {
       return {
+        urlPath: this.$route.path,
         sideList: [{
           name: '会员首页',
           type: 'member',
-          url: '/member/myOrder',
+          url: '',
           subList: []
         }, {
           name: '订单信息',
           type: 'order',
-          url: '/member/myOrder',
+          url: '',
           subList: [{
             name: '我的订单',
-            url: '/member/myOrder'
+            url: '/member/order'
           }, {
             name: '已取消订单',
-            url: '/member/myOrder'
+            url: ''
           }, {
             name: '我的评价',
-            url: '/member/myComment'
+            url: '/member/comment'
           }, {
             name: '我的收藏',
-            url: '/member/myFavorite'
+            url: '/member/favorite'
           }]
         }, {
           name: '积分管理',
           type: 'jifeng',
-          url: '/member/myIntegration',
+          url: '',
           subList: [{
             name: '我的积分',
-            url: '/member/myIntegration'
+            url: '/member/integration'
           }, {
             name: '积分兑换',
-            url: '/member/myIntegration'
+            url: ''
           }]
         }, {
           name: '账户设置',
           type: 'accout',
-          url: '/member/myMessage',
+          url: '',
           subList: [{
             name: '个人信息',
-            url: '/member/myMessage'
+            url: '/member/message'
           }, {
             name: '常用收货人',
-            url: '/member/myMessage'
+            url: ''
           }, {
             name: '修改密码',
-            url: '/member/myMessage'
+            url: ''
           }, {
             name: '修改登录名',
-            url: '/member/myMessage'
+            url: ''
           }, {
             name: '生日/纪念日提醒',
-            url: '/member/myMessage'
+            url: '/member/birthday'
           }, {
             name: '关联QQ/微信账号',
-            url: '/member/myMessage'
+            url: ''
           }]
         }, {
           name: '付款设置',
@@ -84,7 +85,7 @@
           url: '/',
           subList: [{
             name: '我的虚拟账户',
-            url: '/'
+            url: '/member/account'
           }, {
             name: '我的优惠券',
             url: '/'

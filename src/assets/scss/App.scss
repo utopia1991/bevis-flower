@@ -48,6 +48,10 @@ li {
   color: $color-hover !important;
 }
 
+.el-checkbox__label, .el-radio__label {
+  font-size: 12px !important;
+}
+
 .pull-right {
   float: right !important;
 }

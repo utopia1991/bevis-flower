@@ -1,5 +1,5 @@
 <style lang="scss" scope>
-  @import "../assets/scss/MyIntegration.scss";
+  @import "../../assets/scss/Integration.scss";
 </style>
 
 <template>

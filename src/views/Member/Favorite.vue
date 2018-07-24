@@ -1,7 +1,4 @@
 <style lang="scss" scope>
-.el-checkbox__label {
-    font-size: 12px;
-}
 .attention-all {
   font-size: 12px;
   padding: 10px 30px;

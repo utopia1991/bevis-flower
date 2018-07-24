@@ -1,5 +1,5 @@
 <style lang='scss' scope>
-	@import '../assets/scss/MyMessage.scss';
+	@import '../../assets/scss/Message.scss';
 </style>
 
 <template>
@@ -20,9 +20,9 @@
 						</el-form-item>
 						<el-form-item label='性别:' prop='sex'>
 							<el-radio-group v-model='ruleForm.sex'>
-								<el-radio label='男' value='0'></el-radio>
-								<el-radio label='女' value='1'></el-radio>
-								<el-radio label='保密' value='2'></el-radio>
+								<el-radio label='0'>男</el-radio>
+								<el-radio label='1'>女</el-radio>
+								<el-radio label='2'>保密</el-radio>
 							</el-radio-group>
 						</el-form-item>
 						<el-form-item label='生日:'>
@@ -86,7 +86,7 @@ export default {
     return {
       ruleForm: {
         name: '',
-        sex: 0,
+        sex: '0',
         region: '',
         date: '',
         phone: ''

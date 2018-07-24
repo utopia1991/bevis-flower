@@ -12,8 +12,8 @@
           <li class='menu'>
             <a href=''>免费注册</a>
           </li>
-          <li class='menu dropdown'>
-            <router-link to="/member/myOrder" @mouseenter="showOrder" @mouseleave="hideOrder">
+          <li class='menu dropdown' @mouseenter="showOrder" @mouseleave="hideOrder">
+            <router-link to="/member/order">
               我的订单 <i class="el-icon-arrow-down"></i>
             </router-link>
             <section class='dropdown-menu' v-show="this.orderShow">
@@ -27,17 +27,17 @@
               <span class='ico ico-cart'></span>购物车
             </a>
           </li>
-          <li class='menu dropdown'>
-            <span @mouseenter="showCollection" @mouseleave="hideCollection">
+          <li class='menu dropdown' @mouseenter="showCollection" @mouseleave="hideCollection">
+            <router-link to="/member/order">
               收藏夹 <i class="el-icon-arrow-down"></i>
-            </span>
+            </router-link>
             <section class='dropdown-menu' v-show="this.collactionShow">
               <a href=''>在线付款</a>
               <a href=''>帮助中心</a>
             </section>
           </li>
           <li class='menu slogan'>
-            <a href='/shopping/showcart/' data-hover='dropdown' data-delay='0' rel='nofollow' aria-expanded='false'>
+            <a href='/' data-hover='dropdown' data-delay='0' rel='nofollow' aria-expanded='false'>
               联系客服
             </a>
           </li>

@@ -38,6 +38,9 @@
           padding: 6px 0 12px 24px;
           color: #585657;
           border-top: 1px solid #d9d9d9;
+          .active {
+            color: #ff6a00;
+          }
           i {
             position: relative;
             top: 3px;
@@ -45,8 +48,7 @@
           }
           >a {
             color: #585657;
-            &:hover,
-            &:focus {
+            &:hover {
               color: #ff6a00;
             }
           }
@@ -64,8 +66,7 @@
                 display: block;
                 margin-left: 28px;
                 color: #7e7e80;
-                &:hover,
-                &:focus {
+                &:hover {
                   color: #ff6a00;
                 }
               }
@@ -108,8 +109,12 @@
       padding: 0;
       .title {
         margin-bottom: 20px;
-        padding: 8px 30px;
+        padding: 5px 20px;
         background-color: #eee;
+        font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
       }
     }
   }
