@@ -60,14 +60,16 @@
             margin-left: 70px;
           }
           &:last-child {
+            dd.has-height {
+              height: 50px;
+              background: url("../assets/images/arrow_down_open.png") no-repeat right bottom;
+              background-size: 12px;
+            }
             dd {
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: 3;
               padding-right: 30px;
               overflow: hidden;
               text-overflow: ellipsis;
-              background: url("../assets/images/arrow_down_open.png") no-repeat right bottom;
+              background: url("../assets/images/arrow_down_close.png") no-repeat right bottom;
               background-size: 12px;
             }
           }

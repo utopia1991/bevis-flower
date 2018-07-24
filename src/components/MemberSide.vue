@@ -3,12 +3,12 @@
     <div class="hd"><b></b>会员中心</div>
     <ul class="bd">
       <li v-for="(i, index) in sideList" :key="index">
-        <router-link :to="i.url">
+        <router-link :to="i.url" :class="[i.url === currentPath ? 'active' : '']">
           <i :class="'ico-' + i.type"></i>{{i.name}}
         </router-link>
         <ul>
           <li v-for="(sub, index) in i.subList" :key="index">
-            <router-link :to="sub.url" :class="{ 'active': sub.url === urlPath }">
+            <router-link :to="sub.url" :class="[sub.url === currentPath ? 'active' : '']">
               {{sub.name}}
             </router-link>
           </li>
@@ -20,13 +20,15 @@
 
 <script>
   export default {
+    props: {
+      currentPath: String
+    },
     data () {
       return {
-        urlPath: this.$route.path,
         sideList: [{
           name: '会员首页',
           type: 'member',
-          url: '',
+          url: '/member/order',
           subList: []
         }, {
           name: '订单信息',
@@ -34,7 +36,7 @@
           url: '',
           subList: [{
             name: '我的订单',
-            url: '/member/order'
+            url: ''
           }, {
             name: '已取消订单',
             url: ''

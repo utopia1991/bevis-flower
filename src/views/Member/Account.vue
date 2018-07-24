@@ -8,7 +8,7 @@
 			<div class='title'>
 				我的虚拟账户
 			</div>
-			<div class='content order-panel'>
+			<div class='content'>
 				<div class='account'>
 					<table border='0' cellspacing='0' cellpadding='5'>
 						<tbody>

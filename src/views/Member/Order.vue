@@ -3,7 +3,7 @@
 </style>
 
 <template>
-  <div class="box-border member-r">
+  <div class="box-border member-r" id="order">
     <div class="title">您好，欢迎进入会员中心</div>
     <div class="member-info">
       <div class="user">

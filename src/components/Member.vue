@@ -12,7 +12,7 @@
     </section>
     <el-row :gutter="20" class="member">
       <el-col :span="5">
-        <MemberSide></MemberSide>
+        <MemberSide :currentPath='current_path'></MemberSide>
       </el-col>
       <el-col :span="19">
         <router-view></router-view>
@@ -27,6 +27,11 @@
   export default {
     components: {
       MemberSide
+    },
+    computed: {
+      'current_path': function () {
+        return this.$route.path
+      }
     }
   }
 </script>
