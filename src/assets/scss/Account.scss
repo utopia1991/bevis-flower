@@ -1,0 +1,50 @@
+.account {
+  font-size: 12px;
+  margin: 0 30px;
+  > table {
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 24px;
+    font-size: 12px;
+    th {
+      text-align: left;
+    }
+    .money {
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .spmc3 table {
+      background: none repeat scroll 0 0 #ffffff;
+      border-top: 1px solid #d0d0d0;
+      border-right: 1px solid #d0d0d0;
+      margin: 15px 0 15px 0;
+      padding: 0;
+      width: 90%;
+      td {
+        border-bottom: 1px solid #d0d0d0;
+        border-left: 1px solid #d0d0d0;
+        overflow: hidden;
+        padding: 5px 5px;
+        height: 35px;
+        line-height: 22px;
+      }
+      td.no-bl {
+        border-left: medium none;
+      }
+      .record {
+        color:#666666; 
+        text-align:center;
+      }
+    }
+    .pay-rules {
+        position: relative;
+        top: 10px;
+        width:200px;
+        height:29px; 
+        border: 0;
+    }
+  }
+}
