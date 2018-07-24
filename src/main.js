@@ -5,7 +5,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
 import routes from '@/router/routes'
 import axiosPlugin from '@/utils/axios'
+import VDistpicker from 'v-distpicker'
 
+Vue.component('v-distpicker', VDistpicker)
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 

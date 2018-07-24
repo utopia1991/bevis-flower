@@ -67,7 +67,7 @@
             url: '/member/message'
           }, {
             name: '常用收货人',
-            url: ''
+            url: '/member/address'
           }, {
             name: '修改密码',
             url: ''

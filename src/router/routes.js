@@ -10,6 +10,7 @@ import Integration from '@/views/Member/Integration'
 import Message from '@/views/Member/Message'
 import Birthday from '@/views/Member/Birthday'
 import Account from '@/views/Member/Account'
+import Address from '@/views/Member/Address'
 
 // 配置路由
 const routes = [
@@ -26,7 +27,8 @@ const routes = [
           { path: 'integration', component: Integration, name: '我的积分' },
           { path: 'message', component: Message, name: '个人信息' },
           { path: 'birthday', component: Birthday, name: '生日/纪念日提醒' },
-          { path: 'account', component: Account, name: '我的虚拟账户' }
+          { path: 'account', component: Account, name: '我的虚拟账户' },
+          { path: 'address', component: Address, name: '常用收货人' }
         ]
       }
     ]

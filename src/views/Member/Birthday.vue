@@ -89,12 +89,7 @@
 </template>
 
 <script>
-import VDistpicker from 'v-distpicker'
-
 export default {
-  components: {
-    VDistpicker
-  },
   data () {
     return {
       phone: '129*****234',
