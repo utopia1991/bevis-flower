@@ -48,9 +48,8 @@
             <div class="flower-sku-box">
               <span v-for="(product, index) in products" :key="index">
                 <router-link :to="{ path: 'detail', query: { id: product.id }}" class="product-item">
-                  <div class="active flower-sku">
+                  <div class="flower-sku" :class="[product.id === currentId ? 'active' : '']">
                     <img :src="product.img">
-                    <i class="ico ico-check"></i>
                     {{product.name}}
                   </div>
                 </router-link>
@@ -443,6 +442,12 @@
         }],
         serCurrent: 0,
         defaultServer: ''
+      }
+    },
+    computed: {
+      currentId: function () {
+        let id = this.$route.query.id
+        return parseInt(id)
       }
     },
     mounted () {
