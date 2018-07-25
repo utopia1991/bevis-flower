@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: pxTorem(14px);
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
@@ -29,7 +29,7 @@ li {
 
 #app {
   font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
-  font-size: 14px;
+  font-size: pxTorem(14px);
   line-height: 1.42857143;
   color: #737373;
   background-color: #ffffff;
@@ -48,8 +48,9 @@ li {
   color: $color-hover !important;
 }
 
-.el-checkbox__label, .el-radio__label {
-  font-size: 12px !important;
+.el-checkbox__label,
+.el-radio__label {
+  font-size: pxTorem(12px) !important;
 }
 
 .pull-right {
@@ -63,7 +64,7 @@ li {
 .distpicker-address-wrapper {
   display: inline-block;
   select {
-    font-size: 12px;
+    font-size: pxTorem(12px);
     padding: 5px 10px;
     height: 30px;
     margin: 0 -10px 0 15px;

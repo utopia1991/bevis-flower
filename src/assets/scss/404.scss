@@ -1,3 +1,5 @@
+
+@import './Base.scss';
 .bg-404 {
   position: fixed;
   background: #f0f2f5;
@@ -13,8 +15,9 @@
     .pic-404 {
       position: relative;
       float: left;
-      margin: 100px 0 0 200px;
+      margin: 100px 0 0px 200px;
       overflow: hidden;
+      width: 700px;
 
       &__parent {
         width: 100%;
@@ -147,7 +150,7 @@
       overflow: hidden;
 
       &__oops {
-        font-size: 32px;
+        font-size: pxTorem(32px);
         font-weight: bold;
         line-height: 40px;
         color: #1482f0;
@@ -159,7 +162,7 @@
       }
 
       &__headline {
-        font-size: 20px;
+        font-size: pxTorem(20px);
         line-height: 24px;
         color: #1482f0;
         opacity: 0;
@@ -171,7 +174,7 @@
       }
 
       &__info {
-        font-size: 13px;
+        font-size: pxTorem(13px);
         line-height: 21px;
         color: grey;
         opacity: 0;
@@ -192,7 +195,7 @@
         text-align: center;
         color: #ffffff;
         opacity: 0;
-        font-size: 14px;
+        font-size: pxTorem(14px);
         line-height: 36px;
         cursor: pointer;
         animation-name: slideUp;

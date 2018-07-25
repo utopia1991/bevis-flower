@@ -7,7 +7,7 @@
     margin: 30px auto;
     .title {
       width: 100%;
-      font-size: 16px;
+      font-size: pxTorem(16px);
       color: #000;
       border-bottom: 1px solid $color-border;
       height: 36px;
@@ -23,7 +23,7 @@
       li {
         display: inline-block;
         a {
-          font-size: 12px;
+          font-size: pxTorem(12px);
           color: $color-dark-gray;
           margin-right: 5px;
           &:hover {
@@ -40,13 +40,13 @@
       position: relative;
       h2 {
         color: #000;
-        font-size: 24px;
+        font-size: pxTorem(24px);
         font-weight: 500;
         margin-bottom: -10px;
       }
       h3 {
         color: $color-dark-gray;
-        font-size: 12px;
+        font-size: pxTorem(12px);
         font-weight: 500;
       }
     }
@@ -79,10 +79,10 @@
       }
       .title {
         padding: 11px;
-        background: #f72e6e;
+        background: #fb4a80;
         height: 88%;
         float: left;
-        font-size: 22px;
+        font-size: pxTorem(22px);
         color: #fff;
         writing-mode: vertical-lr;
         text-align: center;
@@ -121,7 +121,7 @@
         display: inline-block;
         width: 90%;
         color: #000;
-        font-size: 18px;
+        font-size: pxTorem(18px);
         padding: 10px;
       }
     }
@@ -129,13 +129,22 @@
   .bar {
     height: 40px;
     line-height: 40px;
-    background: #f72e6e;
+    background: rgb(251,74,128);
     margin-bottom: 40px;
     span {
+      position: relative;
       display: inline-block;
       text-align: center;
       width: 25%;
       color: #fff;
+      i {
+        position: relative;
+        top: 5px;
+      }
+      font {
+        position: relative;
+        top: -4px;
+      }
     }
   }
 }

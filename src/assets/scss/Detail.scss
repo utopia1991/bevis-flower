@@ -38,18 +38,18 @@
     .product-r {
       width: 94%;
       .title {
-        font-size: 16px;
+        font-size: pxTorem(16px);
         margin-bottom: 20px;
         border-bottom: 1px solid $color-border;
         h3 {
           color: #4d4d4d;
-          font-size: 16px;
+          font-size: pxTorem(16px);
           font-weight: 700;
         }
       }
       .attribute {
         dl {
-          font-size: 12px;
+          font-size: pxTorem(12px);
           margin: 12px 0;
           dt {
             font-weight: normal;
@@ -75,7 +75,7 @@
         }
       }
       .cascader {
-        font-size: 12px;
+        font-size: pxTorem(12px);
       }
       hr {
         border-top: 0;
@@ -83,7 +83,7 @@
         margin: 20px 0;
       }
       .flower-sku-box {
-        font-size: 12px;
+        font-size: pxTorem(12px);
         .product-item {
           text-decoration: none;
           .flower-sku {
@@ -121,7 +121,7 @@
             font-family: Arial;
           }
           .price-num {
-            font-size: 18px;
+            font-size: pxTorem(18px);
             margin-left: -2px;
           }
         }
@@ -139,7 +139,7 @@
           li {
             line-height: 42px;
             color: #f60;
-            font-size: 12px;
+            font-size: pxTorem(12px);
             display: block;
             float: left;
             margin-right: 10px;
@@ -185,7 +185,7 @@
                 margin-top: 0px;
                 margin-bottom: 0px;
                 color: #737373;
-                font-size: 12px;
+                font-size: pxTorem(12px);
                 padding: 0px;
                 line-height: 0px;
               }
@@ -203,7 +203,7 @@
           width: 140px;
           line-height: 40px;
           border-radius: 0;
-          font-size: 18px;
+          font-size: pxTorem(18px);
           color: #ffffff;
           background-color: #ff6a00;
           border-color: #ff6a00;
@@ -262,7 +262,7 @@
           }
           .info-cont {
             .title {
-              font-size: 12px;
+              font-size: pxTorem(12px);
               overflow: hidden;
               height: 36px;
               margin-bottom: 8px;
@@ -272,7 +272,7 @@
               }
             }
             .price {
-              font-size: 12px;
+              font-size: pxTorem(12px);
               margin-bottom: 8px;
               text-align: center;
               color: #ff6a00;
@@ -287,7 +287,7 @@
         background-color: #ffe8d9;
         border-color: #ebebeb;
         .title {
-          font-size: 15px;
+          font-size: pxTorem(15px);
           text-align: center;
           color: #737373;
           line-height: 0px;
@@ -336,7 +336,7 @@
       }
     }
     .tabs-panel {
-      font-size: 12px;
+      font-size: pxTorem(12px);
       margin-bottom: 25px;
       padding: 20px;
       border: 1px solid #dbdbdb;
@@ -389,7 +389,7 @@
         list-style: none;
         text-align: center;
         li {
-          font-size: 12px;
+          font-size: pxTorem(12px);
           display: inline-block;
           width: 120px;
           margin: 0 10px;

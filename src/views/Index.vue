@@ -38,7 +38,9 @@
       <section class="container">
         <section class="title">
           <h2>
+            <i class="ico-left-arrow"></i>
             精选推荐
+            <i class="ico-right-arrow"></i>
           </h2>
           <h3>SELECTIONS RECOMMENDATION</h3>
         </section>
@@ -55,6 +57,7 @@
     <section class="miaosha">
       <section class="container">
         <span class="title">
+          <i class="ico-miaosha"></i>
           限时秒杀
         </span>
         <router-link v-for="(li, index) in miaosha" :key="index" class="miaosha-item" :to="li.link">
@@ -68,7 +71,9 @@
       <section class="container">
         <section class="title">
           <h2>
+            <i class="ico-left-arrow"></i>
             {{item.name}}
+            <i class="ico-right-arrow"></i>
           </h2>
           <h3>
             {{item.en}}
@@ -99,6 +104,7 @@
     <section class="miaosha">
       <section class="container">
         <span class="title">
+          <i class="ico-miaosha"></i>
           限时秒杀
         </span>
         <router-link v-for="(li, index) in miaosha" :key="index" class="miaosha-item" :to="li.link">
@@ -109,7 +115,8 @@
     </section>
     <section class="bar">
       <span v-for='(tab, index) in tabs' :key='index'>
-        {{tab}}
+        <i :class="'ico-' + tab.name"></i>
+        <font>{{tab.word}}</font>
       </span>
     </section>
   </section>
@@ -553,12 +560,19 @@
             ]
           }
         ],
-        tabs: [
-          '10年品牌，真实口碑',
-          '鲜花实拍秀展示',
-          '全国连锁，3小时送达',
-          '200%退赔承诺'
-        ]
+        tabs: [{
+          name: 'koubei',
+          word: '10年品牌，真实口碑'
+        }, {
+          name: 'camare',
+          word: '鲜花实拍秀展示'
+        }, {
+          name: 'sanh',
+          word: '全国连锁，3小时送达'
+        }, {
+          name: 'peifu',
+          word: '200%退赔承诺'
+        }]
       }
     },
     mounted () {

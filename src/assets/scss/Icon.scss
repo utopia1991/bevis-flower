@@ -14,6 +14,12 @@
     height: 60px;
 }
 
+@mixin tabs-icon {
+	display: inline-block;
+	width: 30px;
+    height: 30px;
+}
+
 .ico-cart-white {
 	@include icon;
     background-position: -306px -281px;
@@ -122,4 +128,55 @@
 	width: 16px;
     height: 16px;
 	background-position: -130px -318px;
+}
+
+.ico-koubei {
+	@include tabs-icon;
+	background: url('./assets/images/koubei.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-peifu {
+	@include tabs-icon;
+	background: url('./assets/images/peifu.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-sanh {
+	@include tabs-icon;
+	background: url('./assets/images/sanh.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-camare {
+	@include tabs-icon;
+	background: url('./assets/images/camare.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-left-arrow {
+	display: inline-block;
+	width: 140px;
+	height: 14px;
+	margin-right: 10px;
+	background: url('./assets/images/left_arrow.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-right-arrow {
+	display: inline-block;
+	width: 140px;
+	height: 14px;
+	margin-left: 10px;
+	background: url('./assets/images/right_arrow.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.ico-miaosha {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('./assets/images/miaosha.png') center center no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 0px;
 }

@@ -1,5 +1,7 @@
+
+@import './Base.scss';
 .account {
-  font-size: 12px;
+  font-size: pxTorem(12px);
   margin: 0 30px;
   > table {
     width: 100%;
@@ -7,12 +9,12 @@
     border-collapse: collapse;
     border-spacing: 0;
     line-height: 24px;
-    font-size: 12px;
+    font-size: pxTorem(12px);
     th {
       text-align: left;
     }
     .money {
-        font-size: 14px;
+        font-size: pxTorem(14px);
         display: inline-block;
         margin-top: 10px;
     }

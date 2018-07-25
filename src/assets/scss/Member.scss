@@ -32,7 +32,7 @@
         list-style: none;
         >li {
           font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", sans-serif;
-          font-size: 14px;
+          font-size: pxTorem(14px);
           font-weight: bold;
           display: block;
           padding: 6px 0 12px 24px;
@@ -61,7 +61,7 @@
               margin: 0;
               padding: 0 0 0 -24px;
               a {
-                font-size: 12px;
+                font-size: pxTorem(12px);
                 line-height: 24px;
                 display: block;
                 margin-left: 28px;
@@ -81,7 +81,7 @@
         li {
           margin-bottom: 1px;
           a {
-            font-size: 12px;
+            font-size: pxTorem(12px);
             line-height: 40px;
             display: block;
             padding-left: 30px;
@@ -112,7 +112,7 @@
         padding: 5px 20px;
         background-color: #eee;
         font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
-        font-size: 14px;
+        font-size: pxTorem(14px);
         font-weight: bold;
         line-height: 30px;
       }

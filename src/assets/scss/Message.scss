@@ -1,5 +1,7 @@
+@import './Base.scss';
+@import './Base.scss';
 .el-form-item__label {
-  font-size: 12px;
+  font-size: pxTorem(12px);
 }
 
 .el-input__inner {
@@ -21,7 +23,7 @@
       padding-left: 40px !important;
       height: 30px;
       padding: 5px 10px;
-      font-size: 12px;
+      font-size: pxTorem(12px);
       line-height: 30px;
       min-height: 32px;
       color: #ff6a00;
@@ -38,8 +40,7 @@
       float: left;
       margin: 0 20px;
       a {
-        font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1",
-          sans-serif;
+        font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", sans-serif;
         line-height: 22px;
         display: inline-block;
         border-bottom: 2px solid transparent;
@@ -57,6 +58,7 @@
     }
   }
 }
+
 .member-base-r {
   float: right;
   width: 320px;
@@ -85,7 +87,7 @@
       p {
         margin: 0 0 10px;
         margin-left: 112px;
-        font-size: 12px;
+        font-size: pxTorem(12px);
         font-weight: normal;
         line-height: 24px;
         margin-top: 10px;

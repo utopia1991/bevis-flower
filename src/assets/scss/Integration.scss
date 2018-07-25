@@ -1,10 +1,10 @@
 @import "./Base.scss";
 .order-panel {
-  font-size: 12px;
+  font-size: pxTorem(12px);
   margin: 0 30px;
   .integration {
     color: red;
-    font-size: 16px;
+    font-size: pxTorem(16px);
   }
   .line {
     display: inline-block;

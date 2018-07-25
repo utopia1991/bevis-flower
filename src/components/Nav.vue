@@ -5,9 +5,9 @@
         <span>您好，欢迎光临爱上鲜花网</span>
         <ul class='nav-r'>
           <li class='menu login' id='LoginInfo'>
-            <a href=''>
+            <router-link to=''>
               亲，请登陆
-            </a>
+            </router-link>
           </li>
           <li class='menu'>
             <a href=''>免费注册</a>

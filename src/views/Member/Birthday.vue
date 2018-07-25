@@ -10,7 +10,7 @@
   }
   .method-tip {
     margin: -5px 0;
-    font-size: 12px;
+    font-size: pxTorem(12px);
     margin-left: 24px;
     a:hover {
       color: #ff6a00;

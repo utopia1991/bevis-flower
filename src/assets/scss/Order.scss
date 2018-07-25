@@ -43,7 +43,7 @@
       }
     }
     .my-counts {
-      font-size: 12px;
+      font-size: pxTorem(12px);
       float: left;
       margin: 0 50px;
       padding: 10px 30px;
@@ -79,13 +79,13 @@
       }
     }
     .my-stuffs {
-      font-size: 12px;
+      font-size: pxTorem(12px);
       line-height: 23px;
       float: left;
       margin: 0;
       padding: 0;
       li a {
-        font-size: 12px;
+        font-size: pxTorem(12px);
         &:hover {
           color: $color-hover;
           text-decoration: underline;
@@ -96,7 +96,7 @@
       clear: both;
       padding-top: 20px;
       p {
-        font-size: 12px;
+        font-size: pxTorem(12px);
         line-height: 20px;
         display: inline-block;
         margin-right: 6px;
@@ -113,7 +113,7 @@
         height: 26px;
         padding: 0 15px;
         color: #fff;
-        font-size: 13px;
+        font-size: pxTorem(13px);
       }
     }
   }
@@ -124,14 +124,14 @@
     h3 {
       font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1",
         sans-serif;
-      font-size: 14px;
+      font-size: pxTorem(14px);
       font-weight: bold;
       margin: 5px 0 10px;
       padding-bottom: 8px;
       border-bottom: 1px solid #d9d9d9;
     }
     p {
-      font-size: 12px;
+      font-size: pxTorem(12px);
       line-height: 24px;
       margin-bottom: 0;
     }
@@ -150,14 +150,14 @@
       h4 {
         font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1",
           sans-serif;
-        font-size: 14px;
+        font-size: pxTorem(14px);
         font-weight: bold;
         line-height: 28px;
         margin: 0;
       }
       a {
         font-weight: 500;
-        font-size: 12px;
+        font-size: pxTorem(12px);
         float: right;
       }
     }
@@ -168,7 +168,7 @@
       }
     }
     .lates-torder {
-      font-size: 12px;
+      font-size: pxTorem(12px);
       margin-bottom: 15px;
       padding-top: 15px;
       border-top: 2px dotted #d9d9d9;
