@@ -50,7 +50,7 @@
         <i>www.xianhuan.com</i>
       </router-link>
       <section class="search">
-        <el-input v-model="query" placeholder="情人节送花">
+        <el-input v-model="query" placeholder="情人节送花" style="width: 300px;">
           <el-button slot="append" icon="el-icon-search"></el-button>
         </el-input>
         <span class="help-block">
