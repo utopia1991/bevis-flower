@@ -28,7 +28,7 @@
         sideList: [{
           name: '会员首页',
           type: 'member',
-          url: '/member/order',
+          url: '/member/index',
           subList: []
         }, {
           name: '订单信息',
@@ -36,7 +36,7 @@
           url: '',
           subList: [{
             name: '我的订单',
-            url: ''
+            url: '/member/order'
           }, {
             name: '已取消订单',
             url: ''

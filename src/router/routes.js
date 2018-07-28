@@ -3,6 +3,7 @@ import Layout from '@/components/Layout'
 import Index from '@/views/Index'
 import Detail from '@/views/Detail'
 import Member from '@/components/Member'
+import MemberIndex from '@/views/Member/Index'
 import Order from '@/views/Member/Order'
 import Comment from '@/views/Member/Comment'
 import Favorite from '@/views/Member/Favorite'
@@ -19,8 +20,9 @@ const routes = [
     children: [
       { path: 'index', component: Index, name: '首页' },
       { path: 'detail', component: Detail, name: '详情页' },
-      { path: '/member', component: Member, redirect: { path: '/member/order' },
+      { path: '/member', component: Member, redirect: { path: '/member/index' },
         children: [
+          { path: 'index', component: MemberIndex, name: '会员首页' },
           { path: 'order', component: Order, name: '我的订单' },
           { path: 'comment', component: Comment, name: '我的评价' },
           { path: 'favorite', component: Favorite, name: '我的收藏' },

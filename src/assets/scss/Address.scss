@@ -21,6 +21,50 @@
       padding: 30px 25px;
       border: 1px solid #d9d9d9;
       background-color: #f9f9f9;
+      .close {
+        font-size: 28px;
+        font-weight: normal;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        float: right;
+        line-height: 1;
+        color: #000000;
+        opacity: 0.2;
+        text-decoration: none;
+      }
+      h5 {
+        font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 0 15px;
+      }
+      .address-list {
+        margin: 0 0 0 10px;
+        padding: 0;
+        list-style: none;
+        li {
+          line-height: 24px;
+          b {
+            font-weight: normal;
+            display: inline-block;
+            width: 70px;
+            color: #adadad;
+          }
+        }
+      }
+      .operate {
+        text-align: right;
+        span {
+          cursor: pointer;
+          color: #95b202;
+        }
+      }
     }
     .address-add {
       font-size: pxTorem(12px);

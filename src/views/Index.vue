@@ -89,10 +89,9 @@
                 <img :src="li.url" alt="" />
               </router-link>
               <section class="price">
-                <span>¥198</span>
+                <router-link :to="{ path: 'detail', query: { id: li.id }}">¥198</router-link>
                 <span style="float:right;">
-                  <i class="el-icon-star-off"></i>
-                  <i class="el-icon-goods"></i>
+                  <i class="ico-cart-gray"></i>
                 </span>
               </section>
             </span>

@@ -10,9 +10,6 @@
 						<li class='active'>
 							<a href='#'>基本信息</a>
 						</li>
-						<li>
-							<a href='#'>头像照片</a>
-						</li>
 					</ul>
 					<el-form :model='ruleForm' :rules='rules' ref='ruleForm' label-width='80px' class='basic-form'>
 						<el-form-item label='真实姓名:' prop='name'>

@@ -66,6 +66,9 @@
         &:last-child {
           margin-right: 0;
         }
+        &:hover {
+          border-color: #999;
+        }
       }
     }
   }
@@ -123,6 +126,22 @@
         color: #000;
         font-size: pxTorem(18px);
         padding: 10px;
+        a {
+          font-family: arial;
+          color: #333;
+          &:hover {
+            color: $color-hover;
+          }
+        }
+        i {
+          cursor: pointer;
+          &:hover {
+            width: 18px;
+            height: 18px;
+            background: url('../assets/images/cart-pink.png') center center no-repeat;
+	          background-size: 100% 100%;
+          }
+        }
       }
     }
   }
